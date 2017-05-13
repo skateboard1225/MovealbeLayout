@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="true"
+    tools:context="com.skateboard.moveabledemo.MainActivity">
+
+    <com.skateboard.moveabledemo.INlineLayout
+        android:layout_gravity="center"
+        android:background="@android:color/holo_green_light"
+        android:layout_width="300dp"
+        android:layout_height="600dp">
+
+        <com.skateboard.moveabledemo.MoveableLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:background="@android:color/black">
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="hehehe"
+                android:textColor="@android:color/holo_green_light"/>
+        </com.skateboard.moveabledemo.MoveableLayout>
+    </com.skateboard.moveabledemo.INlineLayout>
+</FrameLayout>
